@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Shortener</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class='body'>
+    <h1 class="title animated bounceIn">LINK AS A SERVICE</h1>
+    <h4 class='subtitle animated bounceIn fast'>link.cf12.org</h4>
+
+    <form
+      action='/'
+      method='POST'
+      class='form'
+    >
+      <span>
+        <label>Custom Link Name</label>
+        <input type="text" name="slug">
+      </span>
+
+      <span>
+        <label>Redirect To:</label>
+        <input type="url" name="url">
+      </span>
+
+      <button class='submit' type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
