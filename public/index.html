@@ -24,17 +24,30 @@
       class='form'
     >
       <span>
-        <label>Custom Link Name</label>
-        <input type="text" name="slug">
+        <label>Link Name</label>
+        <input
+          type="text"
+          name="slug"
+          class="slug"
+          placeholder="alphanumeric-with-dashes"
+          required
+        >
       </span>
 
       <span>
-        <label>Redirect To:</label>
-        <input type="url" name="url">
+        <label>Redirect</label>
+        <input
+          type="url"
+          name="url"
+          placeholder="https://google.com"
+          required
+        >
       </span>
 
       <button class='submit' type="submit">Submit</button>
     </form>
   </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
