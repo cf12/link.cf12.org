@@ -8,7 +8,7 @@ const slugField = document.querySelector('.slug')
 // })
 
 slugField.addEventListener('keypress', (e) => {
-  if (!e.key.match(/[0-9a-Z-]/)) {
+  if (!e.key.match(/[0-9a-z-]/i)) {
     e.preventDefault()
   }
 })
