@@ -1,6 +1,6 @@
 {
   "name": "link-shortener",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "CF12 <brianx0011@gmail.com>",
   "license": "MIT",
