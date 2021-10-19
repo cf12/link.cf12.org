@@ -1,7 +1,18 @@
 services:
   web:
     build: .
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - 8080:8080
+    networks:
+      - caddy
+    labels:
+      caddy: link.cf12.org
+      caddy.reverse_proxy: "{{upstreams 8080}}"
+
   redis:
     image: "redis:alpine"
+
+networks:
+  caddy:
+    external: true
