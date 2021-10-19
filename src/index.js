@@ -7,10 +7,10 @@ const path = require('path')
 const stealthKeywords = require('./keywords.json')
 
 // Redis
-const client = new Redis(process.env.REDISCLOUD_URL || 'localhost')
+const client = new Redis('redis')
 
 // Express + middleware
-const PORT = process.env.PORT || 8080
+const PORT = 8080
 const app = express()
 
 app.use(helmet())
